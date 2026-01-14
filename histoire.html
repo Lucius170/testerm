@@ -11,9 +11,9 @@
     <h1>📖 Partage ton histoire</h1>
     <p class="intro">Ton témoignage peut inspirer, guérir ou simplement être entendu. Raconte-le anonymement.</p>
 
-    <form id="formHistoire">
-      <label for="histoire">Ton histoire :</label>
-      <textarea id="histoire" name="histoire" rows="6" placeholder="Raconte-nous..." required></textarea>
+    <!-- FORMULAIRE FROMSPREE -->
+    <form id="formHistoire" action="https://formspree.io/f/mreebglb" method="POST">
+      <textarea name="message" rows="6" placeholder="Raconte-nous..." required></textarea>
       <button type="submit">Envoyer</button>
     </form>
 
@@ -22,13 +22,4 @@
 
   <script>
     const form = document.getElementById("formHistoire");
-    const confirmation = document.getElementById("confirmation");
-
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      confirmation.style.display = "block";
-      form.reset();
-    });
-  </script>
-</body>
-</html>
+    const confirmation = document.getElementByI
